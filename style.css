@@ -1,0 +1,72 @@
+/* *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+} */
+
+body{
+    background-color: rgba(255, 255, 255, 0.918);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.125rem;
+    margin:0;
+}
+
+.container{
+  max-width: 980px;
+  margin:0 auto; /*  center it horizontally and vertically ...i think👀*/
+  width: 95%;  /* so that the contents don't seem to be touching the borders */
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #212614;
+}
+
+h1 span{
+    color:#b7832f;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+  img{
+   max-width: 100%; /* so that the image can resize perfectly even if the container width was changed */
+}
+
+.columns{
+    display: flex;
+    margin:1em 0;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.dark{
+    background-color: #312614;
+    padding:.75rem;
+    color: #fff;
+}
+
+.col-1{
+    max-width: 20%;
+}
+.col-2{
+    max-width: 45%;
+}
+.col-3{
+    max-width: 70%; 
+}
+
+@media (max-width:600px){
+    .columns{
+        display: block;
+    }
+
+    .col{
+    max-width: 100%;
+}
+}
